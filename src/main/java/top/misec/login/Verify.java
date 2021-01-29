@@ -1,5 +1,7 @@
 package top.misec.login;
 
+import lombok.extern.log4j.Log4j2;
+
 /**
  * @author Junzhou Liu
  * @create 2020/10/11 16:49
@@ -48,6 +50,6 @@ public class Verify {
     }
 
     public String getVerify() {
-        return "\"bili_jct=" + getBiliJct() + ";SESSDATA=" + getSessData() + ";DedeUserID=" + getUserId();
+        return "bili_jct=" + getBiliJct() + ";SESSDATA=" + getSessData() + ";DedeUserID=" + getUserId() + ";";
     }
 }
